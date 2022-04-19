@@ -1,10 +1,13 @@
-import * as React from 'react';
-import Splash from './screens/splash';
-import database from './database';
-import * as logger from "./logger";
+import * as React from "react";
+import MainNav from "./nav/main_stacknav";
+import { NavigationContainer } from "@react-navigation/native";
 
 export default class App extends React.Component {
   render() {
-    return <Splash />
+    return (
+      <NavigationContainer>
+        <MainNav />
+      </NavigationContainer>
+    );
   }
 }
